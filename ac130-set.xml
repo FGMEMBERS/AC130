@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="c130-jsbsim-cnf.xml"> -->
+<PropertyList include="c130-yasim-cnf.xml">
+
+  <sim>
+    <description>AC-130</description>
+    <author>Jack Mermod (3D/AC-130 Transition)</author>
+
+    <help>
+      <title>AC-130</title>
+      <key>
+        <name>D</name>
+        <desc>Open/Close backdoor</desc>
+      </key>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Fire Both GAU-12 25mm Rotory Cannons</desc>
+      </key>
+      <key>
+        <name>E</name>
+        <desc>Fire Bofors 40mm Cannon</desc>
+      </key>
+    </help>
+
+  </sim>
+
+  <systems>
+    <refuel>
+      <type type="string">boom</type>
+    </refuel>
+  </systems>
+
+</PropertyList>
+

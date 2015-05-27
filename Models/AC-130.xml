@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/AC130/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/AC130/Models/main.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+<!-- Turret -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/turret.ac</path>
+    <offsets>
+      <x-m> -6.4 </x-m>
+      <y-m> -1.95 </y-m>
+      <z-m> 1.35 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- GAU-12 -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/gau12.xml</path>
+    <offsets>
+      <x-m> -6.25 </x-m>
+      <y-m> -1.85 </y-m>
+      <z-m> 1.35   </z-m> 
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/gun_door.ac</path>
+    <offsets>
+      <x-m> -6.4 </x-m>
+      <y-m> -1.85 </y-m>
+      <z-m> 1.3   </z-m> 
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- Turret #2 -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/turret.ac</path>
+    <offsets>
+      <x-m> -5.4 </x-m>
+      <y-m> -1.95 </y-m>
+      <z-m> 1.35 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- GAU-12 #2 -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/gau12.xml</path>
+    <offsets>
+      <x-m> -5.25 </x-m>
+      <y-m> -1.85 </y-m> 
+      <z-m> 1.35  </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/gun_door.ac</path>
+    <offsets>
+      <x-m> -5.4 </x-m>
+      <y-m> -1.85 </y-m>
+      <z-m> 1.3   </z-m> 
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 0 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- 40mm Cannon -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/40/bofors.xml</path>
+    <offsets>
+      <x-m> 3.623 </x-m> <!-- 0.6 -->
+      <y-m> -0.85 </y-m> <!-- -2.4 -->
+      <z-m> 1.17 </z-m>
+      <roll-deg> 0 </roll-deg>
+      <pitch-deg> 5 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+<!-- Mount -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/mount.ac</path>
+    <offsets>
+      <x-m> -5.3 </x-m>
+      <y-m> -1.6 </y-m>
+      <z-m> 1.35 </z-m>
+    </offsets>
+  </model>
+
+<!-- Mount #2 -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/gau12/mount.ac</path>
+    <offsets>
+      <x-m> -6.3 </x-m>
+      <y-m> -1.6 </y-m>
+      <z-m> 1.35 </z-m>
+    </offsets>
+  </model>
+
+
+<!-- BMS -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/BMSorig.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/BMS1.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/BMS2.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/BMS3.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/BMS4.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/BMS5.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/BMS6.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp1.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp2.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp3.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp4.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp5.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp6.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp7.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/comp/comp8.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/BMS/topdisplays.xml</path>
+    <offsets>
+      <x-m> -4</x-m>
+      <y-m> -0.7</y-m>
+      <z-m> 0.3 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4 </x-m>
+      <y-m> 0.6 </y-m>
+      <z-m> 0.85 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.8 </x-m>
+      <y-m> 0.6 </y-m>
+      <z-m> 0.85 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.9 </x-m>
+      <y-m> 0.62 </y-m>
+      <z-m> 0.85 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.9 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.85 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2 </x-m>
+      <y-m> 0.8 </y-m>
+      <z-m> 0.85 </z-m>
+      <roll-deg>   0 </roll-deg>
+      <pitch-deg>  0 </pitch-deg>
+      <heading-deg>180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/instruments/weapons/A-10-armament-panel.xml</path>
+    <offsets>
+      <x-m> -3.7 </x-m>
+      <y-m> 0.1 </y-m>
+      <z-m> 1.82 </z-m>
+      <roll-deg>   0  </roll-deg>
+      <pitch-deg>  52 </pitch-deg>
+      <heading-deg>90 </heading-deg>
+    </offsets>
+  </model>
+
+
+
+<!-- CounterMeasures -->
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/ALQ-172/pylon.ac</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>-12</y-m>
+      <z-m>3.43</z-m>
+      <roll-deg>0</roll-deg>
+      <pitch-deg>0</pitch-deg>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/ac130/ALQ-172/alq172.ac</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>-12</y-m>
+      <z-m>2.8</z-m>
+      <roll-deg>0</roll-deg>
+      <pitch-deg>0</pitch-deg>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+
+
+
+</PropertyList>
+

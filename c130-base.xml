@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <status>Development</status>
+    <aircraft-version>0.1</aircraft-version>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/AC130/Sounds/c130-sound.xml</path>
+    </sound>
+
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/AC130/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+      </generic>
+    </multiplay>
+
+    <instrumentation>
+      <radar>
+        <name>radar</name>
+        <number>0</number>
+      </radar>
+    </instrumentation>
+
+    <menubar include="Dialogs/c130-menu.xml"/>
+
+  </sim>
+
+  <systems>
+    <electrical>
+      <path></path>
+    </electrical>
+  </systems> 
+
+  <!-- engines on, low pitch (parking) -->
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos archive="y">3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+      </engine>
+      <engine n="1">
+        <magnetos archive="y">3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+      </engine>
+      <engine n="2">
+        <magnetos archive="y">3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+      </engine>
+      <engine n="3">
+        <magnetos archive="y">3</magnetos>
+        <propeller-pitch>1.0</propeller-pitch>
+      </engine>
+    </engines>
+
+    <electric>
+      <external-power>0</external-power>
+      <battery-switch>1</battery-switch>
+      <engine n="0">
+        <generator>0</generator>
+      </engine>
+      <engine n="1">
+        <generator>0</generator>
+      </engine>
+    </electric>
+
+    <gear>
+      <brake-parking>1.0</brake-parking>
+      <gear-down>true</gear-down>
+    </gear>
+
+    <lighting>
+      <instruments-norm>0.8</instruments-norm>
+      <landing-lights type="bool">0</landing-lights>
+      <beacon type="bool">0</beacon>
+      <strobe type="bool">0</strobe>
+      <nav-lights type="bool">0</nav-lights>
+      <cabin-lights type="bool">0</cabin-lights>
+      <wing-lights type="bool">0</wing-lights>
+      <taxi-light type="bool">0</taxi-light>
+      <instrument-lights type="bool">0</instrument-lights>
+    </lighting>
+
+    <anti-ice>
+      <prop-heat>0</prop-heat>
+      <pitot-heat>0</pitot-heat>
+    </anti-ice>
+
+    <cabin>
+      <fan type="bool">0</fan>
+      <heat type="bool">0</heat>
+    </cabin>
+
+    <smoke type="bool">true</smoke>
+    <signal type="bool">true</signal>
+    <paratroopers type="bool">true</paratroopers>
+    <jump-signal type="bool">false</jump-signal>
+    <negGtime type="int">0</negGtime>
+
+    <gmeter>
+      <reset type="int">1</reset>
+    </gmeter>
+
+    <flight>
+      <elevator-trim type="double">0</elevator-trim>
+    </flight>
+  </controls>
+
+  <!-- above 700 RPM avoids the stop --> 
+  <engines>
+    <engine n="0">
+      <rpm archive="y">100</rpm>
+    </engine>
+    <engine n="1">
+      <rpm archive="y">100</rpm>
+    </engine>
+    <engine n="2">
+      <rpm archive="y">100</rpm>
+    </engine>
+    <engine n="3">
+      <rpm archive="y">100</rpm>
+    </engine>
+  </engines>
+
+  <ai>
+    <submodels>
+      <trigger type="bool">false</trigger>
+    </submodels>
+  </ai>
+
+  <!-- autopilot -->
+  <autopilot>
+    <settings>
+      <target-speed-kt>330</target-speed-kt>
+    </settings>
+  </autopilot>
+
+  <consumables>
+    <fuel>
+      <tank n="9">
+        <level-gal_us archive="y">200</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <input>
+    <keyboard include="Nasal/c130-keyboard.xml">
+    </keyboard>
+  </input>
+
+  <instrumentation>
+    <radar>
+      <serviceable type="bool" archive="y">true</serviceable>
+      <switch type="string" archive="y">off</switch>
+      <mode-control type="int" archive="y">3</mode-control>
+      <range type="int" archive="y">20</range>
+      <mode type="string" archive="y">WX</mode>
+      <heading-marker type="bool" archive="y">false</heading-marker>
+      <lightning type="bool" archive="y">false</lightning>
+      <display-mode type="string">arc</display-mode>
+      <radar-texture-path type="string" archive="y">Aircraft/Instruments-3d/RDR-160/od_wxradar.rgb</radar-texture-path>
+      <echo-texture-path type="string" archive="y">Aircraft/Instruments/Textures/wxecho.rgb</echo-texture-path>
+      <display-controls>
+        <WX type="bool" archive="y">false</WX>
+        <data type="bool" archive="y">false</data>
+        <pos type="bool" archive="y">true</pos>
+      </display-controls>
+    </radar>
+    <inst-vertical-speed-indicator>
+      <serviceable>true</serviceable>
+    </inst-vertical-speed-indicator>
+    <doors>
+      <crew>
+        <position-norm type="float">0</position-norm>
+      </crew>
+      <passenger>
+        <position-norm type="float">0</position-norm>
+      </passenger>
+    </doors>
+  </instrumentation>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/AC130/Nasal/doors.nas</file>
+    </doors>
+    <c130>
+      <file>Aircraft/AC130/Nasal/liveries.nas</file>
+      <file>Aircraft/Instruments-3d/RDR-160/RDR160.nas</file>
+      <file>Aircraft/AC130/Nasal/light.nas</file>
+    </c130>
+    <aar>
+      <file>Aircraft/Generic/aar.nas</file>
+    </aar>
+    <weapons>
+      <file>Aircraft/AC130/Nasal/weapons.nas</file>
+    </weapons>
+  </nasal>
+
+</PropertyList>

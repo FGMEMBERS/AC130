@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<path>bofortracer.ac</path>
+
+	<animation>
+		<type>dist-scale</type>
+		<name>40</name>
+		<object-name>40</object-name>
+		<interpolation>
+			<entry>
+				<ind>0</ind>
+				<dep>0.05</dep>
+			</entry>
+			<entry>
+				<ind>10</ind>
+				<dep>0.2</dep>
+			</entry>
+			<entry>
+				<ind>400</ind>
+				<dep>10</dep>
+			</entry>
+			<entry>
+				<ind>1000</ind>
+				<dep>0</dep>
+			</entry>
+		</interpolation>
+	</animation>
+
+	<model>
+		<path>Models/Geometry/smoke.xml</path>
+		<name>smoke</name>
+		<offsets>
+			<x-m>10.0</x-m>
+			<y-m>0</y-m>
+			<z-m>-1.43238</z-m>
+		</offsets>
+	</model>
+
+</PropertyList>

@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel1.ac</path>
+
+<animation>
+ <type>range</type>
+ <min-m>0</min-m>
+ <max-m>30</max-m>
+</animation>
+
+  <!-- adf -->
+  <model>
+    <path>Aircraft/Instruments-3d/adf/adf.xml</path>
+    <offsets>
+      <x-m> -0.322 </x-m>
+      <y-m> -0.530 </y-m>
+      <z-m>  0.160 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tacan -->
+  <model>
+   <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Tacan/tacan.xml</path>
+    <offsets>
+      <x-m> -0.333 </x-m>
+      <y-m> -0.258 </y-m>
+      <z-m>  0.056 </z-m>
+      <roll-deg>     0.0 </roll-deg>
+      <pitch-deg>   90.0 </pitch-deg>
+      <heading-deg>  0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Altimètre -->
+  <model>
+   <path>Aircraft/AC130/Models/Interior/Panel/Instruments/altimeter/altimeter.xml</path>
+    <offsets>
+      <x-m> -0.334 </x-m>
+      <y-m> -0.305 </y-m>
+      <z-m>  0.253 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Vitesse -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/AirSpeed/speed.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m> -0.525 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/AirSpeed/speed.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m>  0.337 </y-m>
+      <z-m>  0.250 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Horloge -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m> -0.600 </y-m>
+      <z-m>  0.259 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m>  0.628 </y-m>
+      <z-m>  0.036 </z-m>
+    </offsets>
+  </model>
+
+  <!-- H.S.I. -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m> -0.416 </y-m>
+      <z-m>  0.103 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m>  0.445 </y-m>
+      <z-m>  0.117 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Accélérotmètre (G-meter) -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/gmeter/gmeter.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m> -0.612 </y-m>
+      <z-m>  0.162 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Vélocité verticale -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m>  0.143 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m>  0.551 </y-m>
+      <z-m>  0.130 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Horizon Artificiel -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m> -0.417 </y-m>
+      <z-m>  0.252 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m>  0.445 </y-m>
+      <z-m>  0.252 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Compas magnétique -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/magcompass/comp.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m> -0.669 </y-m>
+      <z-m>  0.269 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Radar -->
+  <model>
+   <path>Aircraft/AC130/Models/Interior/Panel/Instruments/radar/radar.xml</path>
+    <offsets>
+      <x-m> -0.335 </x-m>
+      <y-m> -0.286 </y-m>
+      <z-m> -0.098 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Instruments-3d/RDR-160/RDR-160.xml</path>
+    <offsets>
+     <x-m> -0.335 </x-m>
+     <y-m> -0.286 </y-m>
+     <z-m> -0.088 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Correction aileron -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/trim/trimaileron.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m> -0.518 </y-m>
+      <z-m> -0.056 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Correction gourverne de direction -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/trim/trimrudder.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m> -0.469 </y-m>
+      <z-m> -0.056 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Correction gouverne de profondeur -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/trim/trimelevator.xml</path>
+    <offsets>
+      <x-m> -0.332 </x-m>
+      <y-m> -0.420 </y-m>
+      <z-m> -0.056 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tachimètre -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/tachimeter/tachimeter1.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.264 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/tachimeter/tachimeter2.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m>  0.264 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/tachimeter/tachimeter3.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m>  0.264 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/tachimeter/tachimeter4.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m>  0.264 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Indicateur EGT -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/egt/egt1.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.201 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/egt/egt2.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m>  0.201 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/egt/egt3.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m>  0.201 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/egt/egt4.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m>  0.201 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fuel Flow -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/fuel/fuel1.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.138 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/fuel/fuel2.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m>  0.138 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/fuel/fuel3.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m>  0.138 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/fuel/fuel4.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m>  0.138 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Température d'huile -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oiltemp/oiltemp1.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.075 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oiltemp/oiltemp2.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m>  0.075 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oiltemp/oiltemp3.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m>  0.075 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oiltemp/oiltemp4.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m>  0.075 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pression d'huile -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oilpressure/oilpressure1.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m>  0.012 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oilpressure/oilpressure2.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m>  0.012 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oilpressure/oilpressure3.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m>  0.012 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/oilpressure/oilpressure4.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m>  0.012 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Quantité d'huile -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m> -0.051 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m> -0.051</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m> -0.051 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m> -0.051 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Oil Cooler flaps indicator -->
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.114 </y-m>
+      <z-m> -0.114 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m> -0.038 </y-m>
+      <z-m> -0.114 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.038 </y-m>
+      <z-m> -0.114 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/AC130/Models/Interior/Panel/Instruments/Empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.325 </x-m>
+      <y-m>  0.114 </y-m>
+      <z-m> -0.114 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Manette moteur N°1 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>moteur1</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <interpolation>
+      <entry><ind>  0.0 </ind><dep>   0.0 </dep></entry>
+      <entry><ind>  1.0 </ind><dep> -99.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.112 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manette moteur N°2 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>moteur2</object-name>
+    <property>/controls/engines/engine[1]/throttle</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -99.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m>  0.101 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manette moteur N°3 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>moteur3</object-name>
+    <property>/controls/engines/engine[2]/throttle</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -99.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.056 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manette moteur N°4 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>moteur4</object-name>
+    <property>/controls/engines/engine[3]/throttle</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -99.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.044 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manette pas variable hélice N°1 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>helice1</object-name>
+    <property>/controls/engines/engine[0]/propeller-pitch</property>
+    <interpolation>
+      <entry><ind> 1.0 </ind><dep> -91.0 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m>  0.022 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manette pas variable hélice N°2 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>helice2</object-name>
+    <property>/controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry><ind> 1.0 </ind><dep> -91.0 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m>  0.055 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+ 
+  <!-- Manette pas variable hélice N°3 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>helice3</object-name>
+    <property>/controls/engines/engine[2]/propeller-pitch</property>
+    <interpolation>
+      <entry><ind> 1.0 </ind><dep> -91.0 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m>  0.087 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+ 
+  <!-- Manette pas variable hélice N°4 -->
+  <animation>
+    <type>rotate</type>
+    <object-name>helice4</object-name>
+    <property>/controls/engines/engine[3]/propeller-pitch</property>
+    <interpolation>
+      <entry><ind> 1.0 </ind><dep> -91.0 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>   0.0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.017 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m> -0.180 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

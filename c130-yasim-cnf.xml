@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Lockheed C130 Hercules. -->
+
+<PropertyList include="c130-base.xml">
+
+  <sim>
+
+    <description>AC-130 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>c130-yasim</aero>
+
+    <startup>
+      <splash-texture>Aircraft/AC130/splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/AC130/Models/AC-130.xml</path>
+      <start-idling type="bool">false</start-idling>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model> 
+
+  </sim>
+
+</PropertyList>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<PropertyList> 
+<path>gau12.ac</path>
+
+<animation>
+ <object-name>barrel</object-name>
+ <type>spin</type>
+ <property>controls/armament/trigger</property>
+ <factor>900</factor>
+ <center>
+  <x-m>0</x-m>
+  <y-m>0</y-m>
+  <z-m>0</z-m>
+ </center>
+ <axis>
+  <x>0</x>
+  <y>1</y>
+  <z>0</z>
+ </axis>
+</animation>
+
+    <model> 
+      <path>Aircraft/AC130/Models/effects/blaze.xml</path>
+	  <name>tip</name>
+		<nopreview/>
+      <offsets> 
+        <x-m>0</x-m>
+        <y-m>-1.8</y-m>
+        <z-m>0</z-m>
+				<roll-deg>8</roll-deg>
+      </offsets>
+    </model>
+ <animation>
+  <type>select</type>
+  <object-name>tip</object-name>
+  <condition>
+   <greater-than>
+    <property>controls/armament/trigger</property>
+    <value>0.0</value>
+   </greater-than>
+  </condition>
+ </animation>
+
+
+</PropertyList>

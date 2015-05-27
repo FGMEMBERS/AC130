@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+   <key n="68">
+    <name>D</name>
+    <desc>Passenger door</desc>
+    <binding>
+     <command>nasal</command>
+     <script>doors.doorsystem.passengerexport();</script>
+    </binding>
+   </key>
+
+   <key n="83">
+     <name>S</name>
+     <desc>Start smoke</desc>
+     <binding>
+       <command>property-assign</command>
+       <property>controls/smoke</property>
+       <value>true</value>
+     </binding>
+   </key>
+
+   <key n="100">
+    <name>d</name>
+    <desc>Crew door</desc>
+    <binding>
+     <command>nasal</command>
+     <script>doors.doorsystem.crewexport();</script>
+    </binding>
+   </key>
+
+   <key n="117">
+     <name>u</name>
+     <desc>Stop smoke</desc>
+     <binding>
+       <command>property-assign</command>
+       <property>controls/smoke</property>
+       <value>false</value>
+     </binding>
+   </key>
+
+  <key n="127">
+    <name>Delete</name>
+    <desc>Toggle Reversers</desc>
+    <binding>
+      <command>property-toggle</command>
+      <property>controls/engines/engine[0]/reverser</property>
+    </binding>
+    <binding>
+      <command>nasal</command>
+      <script>
+         setprop("controls/engines/engine[0]/propeller-pitch",0);
+         setprop("controls/engines/engine[1]/propeller-pitch",0);
+         setprop("controls/engines/engine[2]/propeller-pitch",0);
+         setprop("controls/engines/engine[3]/propeller-pitch",0);
+      </script>
+    </binding>
+  </key>
+
+      <key n="101">
+         <name>e</name>
+         <desc>GAU-12 Fire</desc> 
+         <binding>
+<!--          <command>property-assign</command>
+          <property>controls/armament/trigger</property>
+          <value>true</value>-->
+          <command>nasal</command>
+          <script>
+           weapons.fire_gau12();
+          </script>
+         </binding>
+         <mod-up>
+          <binding>
+<!--          <command>property-assign</command>
+          <property>controls/armament/trigger</property>
+          <value>false</value>-->
+          <command>nasal</command>
+          <script>
+           weapons.stop_gau12();
+          </script>
+         </binding> 
+         </mod-up>
+      </key>
+
+      <key n="69">
+         <name>E</name>
+         <desc>bofors cannon</desc> 
+         <binding>
+<!--          <command>property-assign</command>
+          <property>controls/armament/trigger1</property>
+          <value>true</value>-->
+          <command>nasal</command>
+          <script>
+           weapons.fire_40mm();
+          </script>
+         </binding>
+         <mod-up>
+          <binding>
+<!--          <command>property-assign</command>
+          <property>controls/armament/trigger1</property>
+          <value>false</value>-->
+           <command>nasal</command>
+           <script>
+            weapons.stop_40mm();
+           </script>
+          </binding>
+         </mod-up>
+      </key>
+
+
+</PropertyList>
+

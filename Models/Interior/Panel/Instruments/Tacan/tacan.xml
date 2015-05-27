@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>tacan.ac</path>
+
+<animation>
+ <type>range</type>
+ <min-m>0</min-m>
+ <max-m>30</max-m>
+</animation>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>test-lamp</object-name>
+    <object-name>visses</object-name>
+    <object-name>vol-knob</object-name>
+    <object-name>test-button</object-name>
+    <object-name>tenth-knob</object-name>
+    <object-name>xy-knob</object-name>
+    <object-name>unit-knob</object-name>
+    <object-name>select-knob</object-name>
+    <object-name>drum-1</object-name>
+    <object-name>drum-2</object-name>
+    <object-name>drum-3</object-name>
+    <object-name>x-sign</object-name>
+    <object-name>y-sign</object-name>
+    <object-name>clic-tenth-L</object-name>
+    <object-name>clic-tenth-R</object-name>
+    <object-name>clic-xy-L</object-name>
+    <object-name>clic-xy-R</object-name>
+    <object-name>clic-unit-L</object-name>
+    <object-name>clic-unit-R</object-name>
+    <object-name>clic-select-L</object-name>
+    <object-name>clic-select-R</object-name>
+    <object-name>clic-vol-L</object-name>
+    <object-name>clic-vol-R</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>drum-1</object-name>
+    <object-name>drum-2</object-name>
+    <object-name>drum-3</object-name>
+    <object-name>x-sign</object-name>
+    <object-name>y-sign</object-name>
+    <object-name>vol-knob</object-name>
+    <object-name>test-button</object-name>
+    <object-name>tenth-knob</object-name>
+    <object-name>xy-knob</object-name>
+    <object-name>unit-knob</object-name>
+    <object-name>select-knob</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.7 </green>
+      <blue>  0.5 </blue>
+      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>drum-1</object-name>
+    <property>instrumentation/tacan/frequencies/selected-channel[1]</property>
+    <factor>0.1</factor>
+    <offset>-1</offset>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>drum-2</object-name>
+    <property>instrumentation/tacan/frequencies/selected-channel[2]</property>
+    <factor>0.1</factor>
+    <offset>-1</offset>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>drum-3</object-name>
+    <property>instrumentation/tacan/frequencies/selected-channel[3]</property>
+    <factor>0.1</factor>
+    <offset>-1</offset>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>y-sign</object-name>
+    <condition>
+      <equals>
+        <property>instrumentation/tacan/frequencies/selected-channel[4]</property>
+        <value>Y</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>x-sign</object-name>
+    <condition>
+      <equals>
+        <property>instrumentation/tacan/frequencies/selected-channel[4]</property>
+        <value>X</value>
+      </equals>
+    </condition>
+  </animation>
+
+<!-- Comming soon
+  <animation>
+    <name>All-Tenth</name>
+    <object-name>tenth-knob</object-name>
+    <object-name>clic-tenth-L</object-name>
+    <object-name>clic-tenth-R</object-name>
+  </animation>
+
+  <animation>
+    <rotate>
+    <object-name>All-Tenth</object-name>
+    <property>?</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>All-Xy</name>
+    <object-name>xy-knob</object-name>
+    <object-name>clic-xy-L</object-name>
+    <object-name>clic-xy-R</object-name>
+  </animation>
+
+  <animation>
+    <rotate>
+    <object-name>All-Xy</object-name>
+    <property>?</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>All-Unit</name>
+    <object-name>unit-knob</object-name>
+    <object-name>clic-unit-L</object-name>
+    <object-name>clic-unit-R</object-name>
+  </animation>
+
+  <animation>
+    <rotate>
+    <object-name>All-Unit</object-name>
+    <property>?</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>All-Select</name>
+    <object-name>unit-select</object-name>
+    <object-name>clic-select-L</object-name>
+    <object-name>clic-select-R</object-name>
+  </animation>
+
+  <animation>
+    <rotate>
+    <object-name>All-Select</object-name>
+    <property>?</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>All-Vol</name>
+    <object-name>vol-knob</object-name>
+    <object-name>clic-vol-L</object-name>
+    <object-name>clic-vol-R</object-name>
+  </animation>
+
+  <animation>
+    <rotate>
+    <object-name>All-Vol</object-name>
+    <property>?</property>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+-->
+
+  <!-- Hot spot -->
+  <animation>
+    <type>pick</type>
+    <object-name>clic-tenth-L</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-tenth-R</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-xy-L</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-xy-R</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-unit-L</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-unit-R</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-select-L</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-select-R</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-vol-L</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>clic-vol-R</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <!--
+        comming soon
+      -->
+    </action>
+  </animation>
+
+</PropertyList>

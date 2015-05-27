@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<name>armament-panel</name>
+	<path>A-10-armament-panel.ac</path>
+	
+<animation>
+ <type>range</type>
+ <min-m>0</min-m>
+ <max-m>30</max-m>
+</animation>
+
+	<animation>
+		<name>Master Arm Switch</name>
+		<type>pick</type>
+		<object-name>master-arm-switch</object-name>
+		<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+  	        <binding>
+    	        <command>property-toggle</command>
+    		<property>master/armed1</property>
+    		<value>0</value>
+    		<value>1</value>
+   		</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>master-arm-switch</object-name>
+		<type>rotate</type>
+		<property>master/armed1</property>
+		<factor>30</factor>
+		<center>
+			<x-m>0.0029</x-m>
+			<y-m>0.0948</y-m>
+			<z-m>0.0575</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<name>EO Power Switch</name>
+		<type>pick</type>
+		<object-name>eo-pwr-switch</object-name>
+		<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+  	        <binding>
+    	        <command>property-toggle</command>
+    		<property>power/on1</property>
+    		<value>0</value>
+    		<value>1</value>
+   		</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>eo-pwr-switch</object-name>
+		<type>rotate</type>
+		<property>power/on1</property>
+		<factor>30</factor>
+		<center>
+			<x-m>0.0029</x-m>
+			<y-m>0.0948</y-m>
+			<z-m>0.0575</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<name>gun-rate-switch</name>
+		<type>pick</type>
+		<object-name>gun-rate-switch</object-name>
+		<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+  	        <binding>
+    	        <command>property-toggle</command>
+    		<property>sim/model/A-10/weapons/gun-rate-switch1</property>
+    		<value>0</value>
+    		<value>1</value>
+   		</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>gun-rate-switch</object-name>
+		<type>rotate</type>
+		<property>sim/model/A-10/weapons/gun-rate-switch1</property>
+		<factor>30</factor>
+		<center>
+			<x-m>0.0031</x-m>
+			<y-m>-0.0929</y-m>
+			<z-m>0.0575</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<name>aim-9-knob</name>
+		<type>pick</type>
+		<object-name>aim-9-knob</object-name>
+		<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+  	        <binding>
+    	        <command>property-toggle</command>
+    		<property>sim/model/A-10/weapons/dual-AIM-9/aim9-knob1</property>
+    		<value>0</value>
+    		<value>1</value>
+   		</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>aim-9-knob</object-name>
+		<type>rotate</type>
+		<property>sim/model/A-10/weapons/dual-AIM-9/aim9-knob1</property>
+		<factor>45</factor>
+		<center>
+			<x-m>0.0031</x-m>
+			<y-m>-0.0535</y-m>
+			<z-m>-0.0628</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<name>stationselect</name>
+		<type>pick</type>
+		<object-name>jettison</object-name>
+		<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+  	        <binding>
+    	        <command>property-toggle</command>
+    		<property>flares/released</property>
+    		<value>0</value>
+    		<value>1</value>
+   		</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<name>Release Mode</name>
+		<type>pick</type>
+		<object-name>release-mode-knob</object-name>
+		<action>
+		<button>0</button>
+		<repeatable>false</repeatable>
+  	        <binding>
+    	        <command>property-toggle</command>
+    		<property>flares/select</property>
+    		<value>0</value>
+    		<value>1</value>
+   		</binding>
+		</action>
+	</animation>
+
+	<animation>
+		<object-name>release-mode-knob</object-name>
+		<type>rotate</type>
+		<property>flares/select</property>
+	   <!-- <factor>135</factor> -->
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>lights</object-name>
+		<condition>
+		<property>power/on1</property>
+		</condition>
+	</animation>
+
+	<animation>
+		<type>select</type>
+		<object-name>rds-rem-x1</object-name>
+		<condition>
+		<property>power/on1</property>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>rds-rem-x10</object-name>
+		<condition>
+		<property>power/on</property>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>rds-rem-x100</object-name>
+		<condition>
+		<property>power/on</property>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>rds-rem-x1000</object-name>
+		<condition>
+		<property>power/on1</property>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>textranslate</type>
+		<object-name>rds-rem-x1</object-name>
+		<property>ai/submodels/submodel[1]/count</property>
+		<factor>0.1</factor>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>rds-rem-x10</object-name>
+		<property>ai/submodels/submodel[1]/count</property>
+		<factor>0.01</factor>
+		<step>10</step>
+		<scroll>0.5</scroll>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>rds-rem-x100</object-name>
+		<property>ai/submodels/submodel[1]/count</property>
+		<factor>0.001</factor>
+		<step>100</step>
+		<scroll>0.5</scroll>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>rds-rem-x1000</object-name>
+		<property>ai/submodels/submodel[1]/count</property>
+		<factor>0.0001</factor>
+		<step>1000</step>
+		<scroll>0.5</scroll>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+
+
+
+
+</PropertyList>

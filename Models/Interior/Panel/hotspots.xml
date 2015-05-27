@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <name>Aerostar Panel</name>
+  <background>Aircraft/AC130/Models/Interior/Panel/transparent-bg.png</background>
+  <w>1024</w>
+  <h>384</h>
+
+  <instruments>
+    <instrument include="../../../../Instruments-3d/RDR-160/wxradar-hotspots.xml">
+      <name>wxradar hotspots</name>
+      <x> 512 </x>
+      <y> 192 </y>
+      <w> 1024 </w>
+      <h> 384 </h>
+    </instrument>
+  </instruments>
+
+
+
+</PropertyList>
